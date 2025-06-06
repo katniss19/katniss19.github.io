@@ -415,21 +415,28 @@ h1, h2, h3 {
     padding: 1rem 1rem;
     font-size: 1rem;
     
-    .banner {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 0.5rem 1rem;  /* menos padding para no ocupar tanto */
-  }
+  .banner {
+  flex-direction: row; /* Ponemos fila para que titulo y logo estén en línea */
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem; /* separación entre texto y logo */
+}
 
-  .banner h1 {
-    font-size: 1.8rem !important;  /* tamaño más pequeño */
-    margin-bottom: 0.3rem;
-    white-space: normal !important; /* que pueda romper línea */
-    word-break: break-word;          /* que las palabras largas puedan romper */
-    max-width: 100%;                 /* evitar desbordamientos */
-    overflow-wrap: break-word;
-  }
+.banner h1 {
+  font-size: 1.8rem;
+  flex-shrink: 1; /* Que pueda reducir su ancho si hace falta */
+  overflow-wrap: break-word; /* Que el texto se ajuste y no salga */
+  margin: 0;
+}
+
+.banner-icon {
+  height: 30px !important; /* Más pequeña */
+  width: auto;
+  margin-left: auto; /* Empuja la imagen a la derecha */
+  flex-shrink: 0;    /* No se reduce */
+  display: block;
+}
 
   .nav {
     flex-wrap: wrap;
@@ -437,12 +444,7 @@ h1, h2, h3 {
     margin-top: 0.5rem;
   }
 
-.banner-icon {
-    height: 10px !important;  /* Más pequeña */
-    width: auto;
-    margin-left: auto;        /* Empuja la imagen a la derecha */
-    display: block;           /* Para que funcione margin-left auto */
-  }
+  
   }
 }
 
