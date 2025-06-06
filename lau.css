@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #f4f0f8;
+  color: #4a3d4f;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #4a3d4f;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #d8b8e8; /* MALVA MÁS VIVO */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b88ccf;
+  z-index: 9999;
+}
+
+
+.banner h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #3e2e4d; /* CONTRASTE */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.nav , .nav a,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: #3f2e2b;         /* color más oscuro, el que tú elijas */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: #8f6ca4;
+}
+
+.banner-icon {
+  height: 50px;
+  width: auto;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* Imagen del banner */
+.foto-banner {
+  margin-top: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.foto-banner img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Sección Sobre mí */
+.section {
+  padding: 3rem 0;
+}
+
+.sobre-mi-container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.texto-sobre-mi {
+  flex: 1 1 55%;
+}
+
+.foto-sobre-mi {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; 
+}
+
+.foto-sobre-mi img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.bloque-destacado {
+  background-color: #f3ecf9; /* Lila muy suave */
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  
+}
+
+.texto-sobre-mi {
+  flex: 1 1 60%;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: #4a3d4f;
+  line-height: 1.6;
+}
+
+.texto-sobre-mi ul {
+  padding-left: 20px;
+  margin-bottom: 1em;
+  list-style-type: disc;
+}
+
+.foto-sobre-mi {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foto-sobre-mi img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Servicios */
+.servicios-doble {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicio-polaroid {
+  background: white;
+  border: 2px solid #dccfe1;
+  border-radius: 12px;
+  width: 300px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.servicio-polaroid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Explicación y botón */
+.explicacion {
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #a07cb8;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8f6ca4;
+}
+
+#servicios, #contacto {
+  font-size: 1.1rem;
+  flex: 1 1 60%;
+  font-family: 'Lora', serif;
+  color: #4a3d4f;
+  line-height: 1.6;
+}
+
+/* Contacto */
+.contacto-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.contacto-iconos {
+  flex: 1 1 250px;
+}
+
+.dato {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #4a3d4f;
+}
+
+.icono-contacto {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.contact-form {
+  flex: 1 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #4a3d4f;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1.8px solid #c8b8d4;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fbfaff;
+}
+
+.btn-submit {
+  background-color: #a07cb8;
+  color: white;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.btn-submit:hover {
+  background-color: #8f6ca4;
+}
+
+/* Footer */
+.footer-privacidad a {
+  all: unset;              /* Elimina todos los estilos de enlace */
+  color: #fff8f2;          /* Marfil/blanco */
+  cursor: pointer;         /* Para que se note clicable */
+}
+
+.footer-privacidad {
+  background-color: #775a8d;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 40px;
+  text-decoration: underline;         /* Quita el subrayado */
+  color: #fff8f2;                /* Color blanco/marfil claro */
+  font-family: 'Lora', serif;    /* Igual que el resto del texto */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-privacidad a:hover {
+  color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 1rem;
+  }
+
+  .sobre-mi-container,
+  .servicios-doble,
+  .contacto-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+  
+.bloque-destacado ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.bloque-destacado li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
