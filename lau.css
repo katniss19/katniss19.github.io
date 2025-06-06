@@ -416,7 +416,7 @@ h1, h2, h3 {
     padding: 1rem 1rem;
     font-size: 1rem;
     
- .banner {
+  .banner {
     flex-direction: row; /* fila para título y logo en línea */
     align-items: center;
     overflow: hidden;
@@ -429,14 +429,15 @@ h1, h2, h3 {
     flex-shrink: 1;            /* que pueda reducir su ancho */
     overflow-wrap: break-word; /* ajusta texto a varias líneas */
     margin: 0;
-    white-space:normal;;
+    white-space: normal;
   }
 
   .banner-icon {
-    height: auto !important; /* más pequeña */
-    width: 100;
-    margin-left: 200;       /* empuja la imagen a la derecha */
+    height: 30px !important;   /* pequeño */
+    width: auto !important;
+    margin-left: auto;         /* empuja a la derecha */
     display: block;
+    flex-shrink: 0;            /* que no se reduzca */
   }
 
   .nav {
