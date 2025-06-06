@@ -310,7 +310,8 @@ h1, h2, h3 {
 }
 
 
-/* Responsive */
+
+/* Responsive PARA MOVILES */
 @media (max-width: 768px) {
   .banner {
     flex-direction: column;
@@ -344,3 +345,111 @@ h1, h2, h3 {
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  /* El banner se adapta */
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* El nav pasa a columna */
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+  }
+
+  /* En Sobre mí, texto y foto se apilan */
+  .sobre-mi-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-sobre-mi,
+  .foto-sobre-mi {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .foto-sobre-mi img {
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+  }
+
+  /* En servicios, que las tarjetas se ajusten y pasen a bloque */
+  .servicios-doble {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .servicio-polaroid {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* En contacto, que iconos y formulario apilen */
+  .contacto-flex {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contacto-iconos,
+  .contact-form {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Formularios que ocupen todo el ancho */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 1rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
+.texto-legal {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #f3ecf9; /* color suave */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a3d4f;
+}
+
+.texto-legal h2, .texto-legal h3 {
+  color: #4a3d4f;
+  margin-bottom: 1rem;
+}
+
+.texto-legal ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.texto-legal li {
+  margin-bottom: 0.6rem;
+}
+
+/* Responsivo para texto legal POLITICA PRIVACIDAD */
+@media (max-width: 768px) {
+  .texto-legal {
+    max-width: 95%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
