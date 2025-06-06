@@ -419,7 +419,7 @@ h1, h2, h3 {
  .banner {
     flex-direction: row; /* fila para título y logo en línea */
     align-items: center;
-    height: auto;
+    overflow: hidden;
     padding: 1rem;
     gap: 1rem; /* espacio entre título y logo */
   }
@@ -429,13 +429,13 @@ h1, h2, h3 {
     flex-shrink: 1;            /* que pueda reducir su ancho */
     overflow-wrap: break-word; /* ajusta texto a varias líneas */
     margin: 0;
-    max-width: 70%;
+    white-space:normal;;
   }
 
   .banner-icon {
-    height: 30px !important; /* más pequeña */
+    height: 10px !important; /* más pequeña */
     width: auto;
-    margin-left: auto;       /* empuja la imagen a la derecha */
+    margin-left: 200;       /* empuja la imagen a la derecha */
     flex-shrink: 0;          /* que no se reduzca */
     display: block;
   }
