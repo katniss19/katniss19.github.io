@@ -429,6 +429,7 @@ h1, h2, h3 {
     flex-shrink: 1;            /* que pueda reducir su ancho */
     overflow-wrap: break-word; /* ajusta texto a varias líneas */
     margin: 0;
+    max-width: 70%;
   }
 
   .banner-icon {
