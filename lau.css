@@ -416,28 +416,28 @@ h1, h2, h3 {
     padding: 1rem 1rem;
     font-size: 1rem;
     
-  .banner {
-  flex-direction: row; /* Ponemos fila para que titulo y logo estén en línea */
-  align-items: center;
-  height: auto;
-  padding: 1rem;
-  gap: 1rem; /* separación entre texto y logo */
-}
+ .banner {
+    flex-direction: row; /* fila para título y logo en línea */
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem; /* espacio entre título y logo */
+  }
 
-.banner h1 {
-  font-size: 1.8rem;
-  flex-shrink: 1; /* Que pueda reducir su ancho si hace falta */
-  overflow-wrap: break-word; /* Que el texto se ajuste y no salga */
-  margin: 0;
-}
+  .banner h1 {
+    font-size: 1.8rem;
+    flex-shrink: 1;            /* que pueda reducir su ancho */
+    overflow-wrap: break-word; /* ajusta texto a varias líneas */
+    margin: 0;
+  }
 
-.banner-icon {
-  height: 30px !important; /* Más pequeña */
-  width: auto;
-  margin-left: auto; /* Empuja la imagen a la derecha */
-  flex-shrink: 0;    /* No se reduce */
-  display: block;
-}
+  .banner-icon {
+    height: 30px !important; /* más pequeña */
+    width: auto;
+    margin-left: auto;       /* empuja la imagen a la derecha */
+    flex-shrink: 0;          /* que no se reduzca */
+    display: block;
+  }
 
   .nav {
     flex-wrap: wrap;
