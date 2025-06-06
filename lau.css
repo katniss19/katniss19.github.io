@@ -438,7 +438,7 @@ h1, h2, h3 {
   }
 
 .banner-icon {
-    height: 30px !important;  /* Reduce la altura para móvil */
+    height: 10px !important;  /* Reduce la altura para móvil */
     width: auto;
   }
   }
