@@ -46,7 +46,6 @@ h1, h2, h3 {
   z-index: 9999;
 }
 
-
 .banner h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3.5rem;
@@ -55,7 +54,6 @@ h1, h2, h3 {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-
 .nav , .nav a,
 .nav a:visited,
 .nav a:hover,
@@ -63,7 +61,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  color: #3f2e2b;         /* color más oscuro, el que tú elijas */
+  color: #3f2e2b;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -109,6 +107,10 @@ h1, h2, h3 {
 
 .texto-sobre-mi {
   flex: 1 1 55%;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: #4a3d4f;
+  line-height: 1.6;
 }
 
 .foto-sobre-mi {
@@ -126,40 +128,18 @@ h1, h2, h3 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
 .bloque-destacado {
   background-color: #f3ecf9; /* Lila muy suave */
   padding: 1rem 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  
-}
-
-.texto-sobre-mi {
-  flex: 1 1 60%;
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  color: #4a3d4f;
-  line-height: 1.6;
 }
 
 .texto-sobre-mi ul {
   padding-left: 20px;
   margin-bottom: 1em;
   list-style-type: disc;
-}
-
-.foto-sobre-mi {
-  flex: 1 1 35%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.foto-sobre-mi img {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Servicios */
@@ -309,46 +289,9 @@ h1, h2, h3 {
   color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
 }
 
-
-
-/* Responsive PARA MOVILES */
+/* Responsive */
 @media (max-width: 768px) {
-  .banner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav {
-    margin-top: 1rem;
-  }
-
-  .sobre-mi-container,
-  .servicios-doble,
-  .contacto-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-submit {
-    width: 100%;
-  }
-  
-.bloque-destacado ul {
-  list-style-position: inside;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.bloque-destacado li {
-  padding-left: 1rem;
-  text-indent: -0.7rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-/* Responsive para móviles */
-@media (max-width: 768px) {
-  /* El banner se adapta */
+  /* Banner se adapta */
   .banner {
     flex-direction: column;
     align-items: flex-start;
@@ -356,14 +299,19 @@ h1, h2, h3 {
     padding: 1rem;
   }
 
-  /* El nav pasa a columna */
+  .banner h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Nav pasa a columna y se adapta */
   .nav {
     flex-wrap: wrap;
     gap: 0.7rem;
     margin-top: 0.5rem;
   }
 
-  /* En Sobre mí, texto y foto se apilan */
+  /* Sobre mí: texto y foto se apilan */
   .sobre-mi-container {
     flex-direction: column;
     align-items: center;
@@ -377,11 +325,11 @@ h1, h2, h3 {
   }
 
   .foto-sobre-mi img {
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto 1rem auto;
   }
 
-  /* En servicios, que las tarjetas se ajusten y pasen a bloque */
+  /* Servicios: tarjetas se ajustan y pasan a bloque */
   .servicios-doble {
     flex-direction: column;
     gap: 1.5rem;
@@ -393,7 +341,7 @@ h1, h2, h3 {
     max-width: 350px;
   }
 
-  /* En contacto, que iconos y formulario apilen */
+  /* Contacto: iconos y formulario apilan */
   .contacto-flex {
     flex-direction: column;
     gap: 2rem;
@@ -406,7 +354,7 @@ h1, h2, h3 {
     max-width: 100%;
   }
 
-  /* Formularios que ocupen todo el ancho */
+  /* Formularios ocupan todo el ancho */
   .form-group input,
   .form-group textarea,
   .form-group select {
@@ -416,7 +364,23 @@ h1, h2, h3 {
   .btn-submit {
     width: 100%;
   }
+
+  /* Ajustar listas para móvil */
+  .bloque-destacado ul {
+    list-style-position: inside;
+    padding-left: 1.2rem;
+    margin-left: 0;
+  }
+
+  .bloque-destacado li {
+    margin-bottom: 0.5rem;
+    text-indent: 0;
+    padding-left: 0.5rem;
+    line-height: 1.6;
+  }
 }
+
+/* Estilos para texto legal (política privacidad) */
 .texto-legal {
   max-width: 800px;
   margin: 2rem auto;
@@ -452,4 +416,5 @@ h1, h2, h3 {
     font-size: 1rem;
   }
 }
+
 
