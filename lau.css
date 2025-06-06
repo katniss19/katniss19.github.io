@@ -415,29 +415,27 @@ h1, h2, h3 {
     max-width: 95%;
     padding: 1rem 1rem;
     font-size: 1rem;
-    
   .banner {
-    flex-direction: row; /* fila para título y logo en línea */
-    align-items: center;
-    overflow: hidden;
-    padding: 1rem;
-    gap: 1rem; /* espacio entre título y logo */
+    flex-direction: row !important; /* Mantener en fila */
+    align-items: center !important;
+    padding: 1rem !important;
+    gap: 1rem !important;
   }
 
   .banner h1 {
-    font-size: 1.8rem;
-    flex-shrink: 1;            /* que pueda reducir su ancho */
-    overflow-wrap: break-word; /* ajusta texto a varias líneas */
-    margin: 0;
-    white-space: normal;
+    font-size: 1.8rem !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    flex-shrink: 1 !important;
+    overflow-wrap: break-word !important;
   }
 
   .banner-icon {
-    height: 30px !important;   /* pequeño */
+    height: 30px !important;   /* Tamaño pequeño */
     width: auto !important;
-    margin-left: auto;         /* empuja a la derecha */
-    display: block;
-    flex-shrink: 0;            /* que no se reduzca */
+    margin-left: auto !important;  /* Empuja a la derecha */
+    flex-shrink: 0 !important;     /* No se reduce */
+    display: block !important;
   }
 
   .nav {
