@@ -135,8 +135,14 @@
 
       <!-- Derecha: formulario -->
 <form class="contact-form" action="https://formsubmit.co/caec285a23b9cd0ac4c48e66e60d2650" method="POST" autocomplete="off">
+  <!-- Deshabilitar captcha para pruebas -->
   <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_next" value="index.html" />
+
+  <!-- URL a la que se redirige tras enviar el formulario -->
+  <input type="hidden" name="_next" value="https://katniss19.github.io/PAGINA-PSICO/index.html" />
+
+  <!-- Para evitar doble envío -->
+  <input type="hidden" name="_subject" value="Nueva cita desde página web" />
 
   <div class="form-group">
     <label for="nombre">Nombre</label>
@@ -169,6 +175,7 @@
 
   <button type="submit" class="btn-submit">Pide cita</button>
 </form>
+
 
 
 </section>
