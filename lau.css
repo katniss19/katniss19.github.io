@@ -94,13 +94,10 @@ h1, h2, h3 {
 }
 
 /* Sección Sobre mí */
-.section {
-  padding: 3rem 0;
-}
 
 .sobre-mi-container {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
@@ -118,7 +115,7 @@ h1, h2, h3 {
   flex: 1 1 40%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .foto-sobre-mi img {
@@ -135,6 +132,21 @@ h1, h2, h3 {
   border-radius: 12px;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.bloque-destacado-2 {
+  background-color: #f3ecf9;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  margin-bottom: 1.5rem;
+
 }
 
 .texto-sobre-mi ul {
