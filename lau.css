@@ -22,6 +22,23 @@ h1, h2, h3 {
   color: #4a3d4f;
 }
 
+/* Haz que el <img class="banner-lau"> sea un cuadrado igual a la altura del header */
+.banner {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Fuerza la imagen a 80×80 dentro del header */
+.banner-lau {
+  display: block !important;
+  width: 80px !important;       /* igual a la altura del header */
+  height: 80px !important;      /* cuadrado perfecto */
+  object-fit: cover !important; /* recorta si fuera necesario */
+  flex-shrink: 0 !important;    /* no se encoja */
+}
+
+
+
 .section h2 {
   margin-bottom: 1rem;
 }
@@ -111,6 +128,10 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
+.foto-sobre-mi img {
+  position: relative !important;
+  top: 4rem !important;
+}
 .foto-sobre-mi {
   flex: 1 1 40%;
   display: flex;
@@ -301,6 +322,9 @@ h1, h2, h3 {
 .footer-privacidad a:hover {
   color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
 }
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
