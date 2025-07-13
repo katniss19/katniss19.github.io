@@ -22,23 +22,6 @@ h1, h2, h3 {
   color: #4a3d4f;
 }
 
-/* Haz que el <img class="banner-lau"> sea un cuadrado igual a la altura del header */
-.banner {
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* Fuerza la imagen a 80×80 dentro del header */
-.banner-lau {
-  display: block !important;
-  width: 80px !important;       /* igual a la altura del header */
-  height: 80px !important;      /* cuadrado perfecto */
-  object-fit: cover !important; /* recorta si fuera necesario */
-  flex-shrink: 0 !important;    /* no se encoja */
-}
-
-
-
 .section h2 {
   margin-bottom: 1rem;
 }
@@ -55,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #d8b8e8; /* MALVA MÁS VIVO */
+  background-color: #f2dff5; /* MALVA MÁS VIVO */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -64,13 +47,13 @@ h1, h2, h3 {
   z-index: 9999;
 }
 
-.banner h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #3e2e4d; /* CONTRASTE */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
+
+.banner-lau{
+width:80%;
+top:2;
 }
+
 
 .nav , .nav a,
 .nav a:visited,
@@ -118,6 +101,9 @@ h1, h2, h3 {
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+    max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .texto-sobre-mi {
@@ -155,26 +141,82 @@ h1, h2, h3 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.bloque-destacado-2 {
-  background-color: #f3ecf9;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  margin-bottom: 1.5rem;
-
-}
 
 .texto-sobre-mi ul {
   padding-left: 20px;
   margin-bottom: 1em;
   list-style-type: disc;
 }
+/* -------------------------------
+   Sección Enfoque (centrada)
+   ------------------------------- */
+#enfoque {
+  margin-top: 4rem; /* separa de la sección anterior */
+  margin-bottom: 4rem;
+}
+
+#enfoque .enfoque-container {
+  max-width: 1000px;  /* igual que el contenedor principal */
+  margin: 0 auto;     /* centra horizontalmente */
+  padding: 0 1rem;
+}
+
+#enfoque .bloque-destacado {
+  background-color: #f3ecf9; /* mismo estilo que bloques “Sobre mí” */
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  max-width: 1000px;   /* opcional: para un bloque más estrecho */
+  margin: 0 auto;     /* centra el bloque dentro del container */
+  text-align: left;   /* o center si prefieres el texto centrado */
+}
+
+@media (max-width: 768px) {
+  #enfoque .bloque-destacado {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
+/* Tipografía igual que sección Sobre mí para Enfoque y Certificaciones */
+#enfoque .bloque-destacado h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;        /* mismo tamaño que tu h2 de Sobre mí */
+  margin-bottom: 1rem;
+  color: #4a3d4f;
+}
+
+#enfoque .bloque-destacado p,
+
+#enfoque .bloque-destacado ul {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;      /* mismo tamaño que tu texto en Sobre mí */
+  line-height: 1.6;
+  color: #4a3d4f;
+}
+
+/* Ajuste de márgenes internos para que encaje igual */
+#enfoque .bloque-destacado {
+  padding: 1rem 1.5rem;    /* mismo padding que .bloque-destacado en Sobre mí */
+}
+
+/* Estrecha solo Certificaciones */
+#enfoque .bloque-destacado.certificaciones {
+  max-width: 1000px;    /* ajusta a tu gusto, p. ej. 700px o 600px */
+  margin: 2rem auto 0; /* mantiene el centrado y separación vertical */
+}
+/* Ajuste de tamaño para el título de Certificaciones */
+#enfoque .bloque-destacado.certificaciones h3 {
+  font-size: 1.5rem;  /* antes era 2rem, lo bajamos a 1.6rem */
+}
+
+/* Ajuste de tamaño para h3 en Sobre mí */
+#sobre-mi .bloque-destacado h3 {
+  font-size: 1.5rem;     /* mismo tamaño que los h2 de enfoque */
+  margin-bottom: 1rem; /* igual separación */
+}
+
+
 
 /* Servicios */
 .servicios-doble {
@@ -322,9 +364,6 @@ h1, h2, h3 {
 .footer-privacidad a:hover {
   color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
 }
-
-
-
 
 /* Responsive */
 @media (max-width: 768px) {
