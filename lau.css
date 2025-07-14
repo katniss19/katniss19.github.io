@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #k4bbea;
+  background-color: #e4bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -395,14 +395,19 @@ h1, h2, h3 {
     line-height: 1.5;
   }
 
-  h2 {
-    font-size: 1.1rem;
+   h2 {
+    font-size: 1.3rem;
   }
 
   h3 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
+  #enfoque .bloque-destacado h3,
+  #sobre-mi .bloque-destacado h3 {
+    font-size: 1.1rem; /* igual que h3 global en móvil */
+  }
+}
   /* Secciones en columna */
   .section {
     padding: 2rem 1rem;
