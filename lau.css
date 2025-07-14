@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #e4bbea;
+  background-color: #84bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -455,16 +455,26 @@ h1, h2, h3 {
     width: 100%;
     max-width: 380px;
   }
-..contacto-iconos small {
-  display: inline-block;
-  text-align: left;
-  margin-left: 0;
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;          /* No muestra puntos suspensivos */
-  font-size: clamp(0.7rem, 3vw, 0.9rem);  /* 🔧 Escala el tamaño según pantalla */
-}
+  .contacto-iconos {
+    text-align: left;
+  }
+
+  .datos-contacto {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .contacto-iconos small {
+    display: block;
+    margin-left: 0.2rem;
+    text-align: left;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+  }
 
   .form-group input,
   .form-group textarea,
