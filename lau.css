@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #e4bbea; /* MALVA MÁS VIVO */
+  background-color: #e4bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -47,15 +47,12 @@ h1, h2, h3 {
   z-index: 9999;
 }
 
-
-
-.banner-lau{
-width:80%;
-top:2;
+.banner-lau {
+  width: 80%;
+  top: 2;
 }
 
-
-.nav , .nav a,
+.nav, .nav a,
 .nav a:visited,
 .nav a:hover,
 .nav a:active {
@@ -80,7 +77,6 @@ top:2;
   object-fit: contain;
 }
 
-/* Imagen del banner */
 .foto-banner {
   margin-top: 80px;
   width: 100%;
@@ -93,15 +89,13 @@ top:2;
   object-fit: cover;
 }
 
-/* Sección Sobre mí */
-
 .sobre-mi-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-    max-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -118,6 +112,7 @@ top:2;
   position: relative !important;
   top: 4rem !important;
 }
+
 .foto-sobre-mi {
   flex: 1 1 40%;
   display: flex;
@@ -134,41 +129,38 @@ top:2;
 }
 
 .bloque-destacado {
-  background-color: #f3ecf9; /* Lila muy suave */
+  background-color: #f3ecf9;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-
 .texto-sobre-mi ul {
   padding-left: 20px;
   margin-bottom: 1em;
   list-style-type: disc;
 }
-/* -------------------------------
-   Sección Enfoque (centrada)
-   ------------------------------- */
+
 #enfoque {
-  margin-top: 4rem; /* separa de la sección anterior */
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 #enfoque .enfoque-container {
-  max-width: 1000px;  /* igual que el contenedor principal */
-  margin: 0 auto;     /* centra horizontalmente */
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
 #enfoque .bloque-destacado {
-  background-color: #f3ecf9; /* mismo estilo que bloques “Sobre mí” */
+  background-color: #f3ecf9;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  max-width: 1000px;   /* opcional: para un bloque más estrecho */
-  margin: 0 auto;     /* centra el bloque dentro del container */
-  text-align: left;   /* o center si prefieres el texto centrado */
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -178,47 +170,22 @@ top:2;
   }
 }
 
-/* Tipografía igual que sección Sobre mí para Enfoque y Certificaciones */
-#enfoque .bloque-destacado h3 {
+#enfoque .bloque-destacado h3,
+#sobre-mi .bloque-destacado h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;        /* mismo tamaño que tu h2 de Sobre mí */
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #4a3d4f;
 }
 
 #enfoque .bloque-destacado p,
-
 #enfoque .bloque-destacado ul {
   font-family: 'Lora', serif;
-  font-size: 1.1rem;      /* mismo tamaño que tu texto en Sobre mí */
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #4a3d4f;
 }
 
-/* Ajuste de márgenes internos para que encaje igual */
-#enfoque .bloque-destacado {
-  padding: 1rem 1.5rem;    /* mismo padding que .bloque-destacado en Sobre mí */
-}
-
-/* Estrecha solo Certificaciones */
-#enfoque .bloque-destacado.certificaciones {
-  max-width: 1000px;    /* ajusta a tu gusto, p. ej. 700px o 600px */
-  margin: 2rem auto 0; /* mantiene el centrado y separación vertical */
-}
-/* Ajuste de tamaño para el título de Certificaciones */
-#enfoque .bloque-destacado.certificaciones h3 {
-  font-size: 1.5rem;  /* antes era 2rem, lo bajamos a 1.6rem */
-}
-
-/* Ajuste de tamaño para h3 en Sobre mí */
-#sobre-mi .bloque-destacado h3 {
-  font-size: 1.5rem;     /* mismo tamaño que los h2 de enfoque */
-  margin-bottom: 1rem; /* igual separación */
-}
-
-
-
-/* Servicios */
 .servicios-doble {
   display: flex;
   gap: 2rem;
@@ -230,10 +197,18 @@ top:2;
   background: white;
   border: 2px solid #dccfe1;
   border-radius: 12px;
-  width: 300px;
+  width: 300px; /* <--- mantén esto */
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-polaroid:hover {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+
 }
 
 .servicio-polaroid img {
@@ -244,7 +219,6 @@ top:2;
   margin-bottom: 1rem;
 }
 
-/* Explicación y botón */
 .explicacion {
   text-align: center;
   max-width: 600px;
@@ -275,7 +249,6 @@ top:2;
   line-height: 1.6;
 }
 
-/* Contacto */
 .contacto-flex {
   display: flex;
   gap: 2rem;
@@ -341,11 +314,10 @@ top:2;
   background-color: #8f6ca4;
 }
 
-/* Footer */
 .footer-privacidad a {
-  all: unset;              /* Elimina todos los estilos de enlace */
-  color: #fff8f2;          /* Marfil/blanco */
-  cursor: pointer;         /* Para que se note clicable */
+  all: unset;
+  color: #fff8f2;
+  cursor: pointer;
 }
 
 .footer-privacidad {
@@ -354,19 +326,18 @@ top:2;
   text-align: center;
   font-size: 1rem;
   margin-top: 40px;
-  text-decoration: underline;         /* Quita el subrayado */
-  color: #fff8f2;                /* Color blanco/marfil claro */
-  font-family: 'Lora', serif;    /* Igual que el resto del texto */
+  text-decoration: underline;
+  color: #fff8f2;
+  font-family: 'Lora', serif;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .footer-privacidad a:hover {
-  color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
+  color: #f1e5db;
 }
-/* Responsive para móvil */
+
 @media (max-width: 768px) {
-  /* Banner */
   .banner {
     flex-direction: column;
     align-items: center;
@@ -378,13 +349,9 @@ top:2;
     gap: 0.7rem;
     margin-top: 0.5rem;
   }
-
-  /* Secciones apiladas */
   .section {
-    padding: 2rem 1rem; /* añade algo de espacio vertical */
+    padding: 2rem 1rem;
   }
-
-  /* Sobre mí: texto y foto */
   .sobre-mi-container {
     flex-direction: column;
     align-items: center;
@@ -396,18 +363,14 @@ top:2;
     top: 0 !important;
     position: static !important;
   }
-
-  /* Enfoque y Certificaciones */
   #enfoque .enfoque-container {
-    padding: 0; /* quita relleno */
+    padding: 0;
   }
   #enfoque .bloque-destacado {
     margin: 1.5rem auto;
     width: 100%;
     max-width: 90%;
   }
-
-  /* Servicios: tarjetas en columna */
   .servicios-doble {
     flex-direction: column;
     gap: 1.5rem;
@@ -417,8 +380,7 @@ top:2;
     width: 100%;
     max-width: 350px;
   }
-
-  /* Contacto: iconos arriba, formulario abajo */
+  
   .contacto-flex {
     flex-direction: column;
     gap: 2rem;
@@ -429,8 +391,6 @@ top:2;
     width: 100%;
     max-width: 400px;
   }
-
-  /* Formularios */
   .form-group input,
   .form-group textarea,
   .form-group select {
@@ -439,8 +399,6 @@ top:2;
   .btn-submit {
     width: 100%;
   }
-
-  /* Listas dentro de bloque-destacado */
   .bloque-destacado ul {
     list-style-position: inside;
     padding-left: 1rem;
