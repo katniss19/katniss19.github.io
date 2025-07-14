@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #84bbea;
+  background-color: #e4bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -108,17 +108,25 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
-.foto-sobre-mi img {
-  position: relative !important;
-  top: 4rem !important;
-}
-
 .foto-sobre-mi {
   flex: 1 1 40%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;  /* La empuja un poco a la derecha */
   align-items: flex-start;
+  margin-top: 20px;            /* Sube la imagen */
+  margin-left: 10px;            /* Desplaza a la derecha */
 }
+
+.foto-sobre-mi img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+
+}
+
 
 .foto-sobre-mi img {
   width: 110%;
@@ -129,7 +137,7 @@ h1, h2, h3 {
 }
 
 .bloque-destacado {
-  background-color: #f3ecf9;
+  background-color: #e9dff1;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -143,7 +151,7 @@ h1, h2, h3 {
 }
 
 #enfoque {
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -154,13 +162,16 @@ h1, h2, h3 {
 }
 
 #enfoque .bloque-destacado {
-  background-color: #f3ecf9;
+  background-color: #e9dff1;;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
+}
+#enfoque .bloque-destacado.certificaciones {
+  margin-top: 1.5rem; /* Espacio pequeño entre enfoque y certificaciones */
 }
 
 @media (max-width: 768px) {
