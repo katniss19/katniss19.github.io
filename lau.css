@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #e4bbea;
+  background-color: #84bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -426,7 +426,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: 0 0 0.5rem 0; /* Añade solo margen inferior */
   }
 
   .foto-sobre-mi img {
@@ -436,7 +436,14 @@ h1, h2, h3 {
     margin: 0;
     top: 0 !important;
     position: static !important;
+    padding: 0;
   }
+
+  .texto-sobre-mi .bloque-destacado {
+    margin-top: 0; /* Elimina margen innecesario encima del texto */
+  }
+
+
 
   .servicio-polaroid {
     width: 100%;
