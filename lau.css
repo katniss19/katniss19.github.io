@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #e4bb6a;
+  background-color: #e4bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -338,54 +338,111 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
-  /* LOGO centrado y tamaño equilibrado */
-.banner-lau {
-  width: auto;
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 0.5rem;
-  object-fit: contain;
-}
+  /* Banner */
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
 
-/* REDUCIR tamaño imagen del banner (foto de manos) */
-.foto-banner img {
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-}
+  .banner-lau {
+    width: 140px;
+    margin-bottom: 0.5rem;
+  }
 
-/* AJUSTAR fuente para mayor legibilidad en móvil */
-body,
-.bloque-destacado p,
-.texto-sobre-mi,
-.form-group input,
-.form-group textarea,
-.form-group select {
-  font-size: 0.92rem;
-  line-height: 1.5;
-}
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+  }
 
-h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.6rem;
-}
+  .banner-icon {
+    height: 28px;
+    width: auto;
+  }
 
-h3 {
-  font-size: 1.1rem;
-}
+  /* Banner de imagen */
+  .foto-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
 
-/* Ajustar el contenedor del banner para evitar encimamiento */
-.banner {
-  padding: 1rem 0.5rem;
-  text-align: center;
-}
+  /* Tipografía general */
+  body,
+  .bloque-destacado p,
+  .texto-sobre-mi,
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 
-.nav {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-}
+  h2 {
+    font-size: 1.25rem;
+  }
 
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Secciones en columna */
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .sobre-mi-container,
+  .servicios-doble,
+  .contacto-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .foto-sobre-mi img {
+    width: 90%;
+    max-width: 250px;
+    margin: 1rem auto;
+    top: 0 !important;
+    position: static !important;
+  }
+
+  .servicio-polaroid {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .contact-form,
+  .contacto-iconos {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  /* Formularios */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 1rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+
+  /* Listas */
+  .bloque-destacado ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+  }
+
+  .bloque-destacado li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
 }
