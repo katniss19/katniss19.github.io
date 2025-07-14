@@ -459,7 +459,6 @@ h1, h2, h3 {
   display: inline-block;
   text-align: left;
   margin-left: 0;
-  padding-left: 0.3rem;         /* 🔧 Menor margen izquierdo */
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
