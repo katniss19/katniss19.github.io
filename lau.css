@@ -455,10 +455,6 @@ h1, h2, h3 {
     width: 100%;
     max-width: 380px;
   }
-  .contacto-iconos {
-    text-align: left;
-  }
-
   .datos-contacto {
     padding-left: 0;
     margin-left: 0;
@@ -467,13 +463,12 @@ h1, h2, h3 {
 
   .contacto-iconos small {
     display: block;
-    margin-left: -0.5rem;
     text-align: left;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
-    font-size: 0.6rem
+    margin-left: 0;
+    font-size: 0.6rem; /* Letra más pequeña */
+    white-space: normal;  /* Permite que salte de línea */
+    word-break: break-word; /* Por si acaso hay una palabra larga */
+  }
   }
 
   .form-group input,
