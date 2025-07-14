@@ -346,7 +346,7 @@ h1, h2, h3 {
   }
 
   .banner-lau {
-    width: 140px;
+    width: auto;
     margin-bottom: 0.5rem;
   }
 
@@ -358,7 +358,7 @@ h1, h2, h3 {
   }
 
   .banner-icon {
-    height: 10px;
+    height: 15px;
   }
 
   .foto-banner img {
