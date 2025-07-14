@@ -137,7 +137,7 @@ h1, h2, h3 {
 }
 
 .bloque-destacado {
-  background-color: #e9dff1;
+  background-color: #ecdff4;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -162,7 +162,7 @@ h1, h2, h3 {
 }
 
 #enfoque .bloque-destacado {
-  background-color: #e9dff1;;
+  background-color: #ecdff4;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -455,16 +455,18 @@ h1, h2, h3 {
     width: 100%;
     max-width: 380px;
   }
-.contacto-iconos small {
-    display: inline-block;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 0.5rem;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+..contacto-iconos small {
+  display: inline-block;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0.3rem;         /* 🔧 Menor margen izquierdo */
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;          /* No muestra puntos suspensivos */
+  font-size: clamp(0.7rem, 3vw, 0.9rem);  /* 🔧 Escala el tamaño según pantalla */
+}
+
   .form-group input,
   .form-group textarea,
   .form-group select {
