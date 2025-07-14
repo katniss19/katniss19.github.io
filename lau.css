@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #e4bhea;
+  background-color: #e4bbea;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -364,9 +364,9 @@ h1, h2, h3 {
   }
 
   .banner-icon {
-    height: 15px;
-    width: auto;
+    display: none;
   }
+
 
   /* Banner de imagen */
   .foto-banner img {
@@ -411,7 +411,8 @@ h1, h2, h3 {
 
   .foto-sobre-mi img {
     width: 100%;
-    max-width: 250px;
+    max-width: 320px;
+    height: auto;
     margin: 1rem auto;
     top: 0 !important;
     position: static !important;
