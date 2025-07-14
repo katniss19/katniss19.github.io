@@ -38,7 +38,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #f2dff5; /* MALVA MÁS VIVO */
+  background-color: #e4bbea; /* MALVA MÁS VIVO */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -364,157 +364,89 @@ top:2;
 .footer-privacidad a:hover {
   color: #f1e5db;                /* Un tono ligeramente distinto al pasar el ratón */
 }
-
-/* Responsive */
+/* Responsive para móvil */
 @media (max-width: 768px) {
-  /* Banner se adapta */
+  /* Banner */
   .banner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
     padding: 1rem;
   }
-
-  .banner h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Nav pasa a columna y se adapta */
   .nav {
     flex-wrap: wrap;
     gap: 0.7rem;
     margin-top: 0.5rem;
   }
 
-  /* Sobre mí: texto y foto se apilan */
+  /* Secciones apiladas */
+  .section {
+    padding: 2rem 1rem; /* añade algo de espacio vertical */
+  }
+
+  /* Sobre mí: texto y foto */
   .sobre-mi-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .texto-sobre-mi,
-  .foto-sobre-mi {
-    flex: 1 1 100%;
-    max-width: 100%;
     text-align: center;
   }
-
   .foto-sobre-mi img {
     max-width: 280px;
-    margin: 0 auto 1rem auto;
+    margin: 1.5rem auto;
+    top: 0 !important;
+    position: static !important;
   }
 
-  /* Servicios: tarjetas se ajustan y pasan a bloque */
+  /* Enfoque y Certificaciones */
+  #enfoque .enfoque-container {
+    padding: 0; /* quita relleno */
+  }
+  #enfoque .bloque-destacado {
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  /* Servicios: tarjetas en columna */
   .servicios-doble {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
   }
-
   .servicio-polaroid {
-    width: 90%;
+    width: 100%;
     max-width: 350px;
   }
 
-  /* Contacto: iconos y formulario apilan */
+  /* Contacto: iconos arriba, formulario abajo */
   .contacto-flex {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
   }
-
   .contacto-iconos,
   .contact-form {
-    flex: 1 1 100%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
   }
 
-  /* Formularios ocupan todo el ancho */
+  /* Formularios */
   .form-group input,
   .form-group textarea,
   .form-group select {
     font-size: 1rem;
   }
-
   .btn-submit {
     width: 100%;
   }
 
-  /* Ajustar listas para móvil */
+  /* Listas dentro de bloque-destacado */
   .bloque-destacado ul {
     list-style-position: inside;
-    padding-left: 1.2rem;
-    margin-left: 0;
+    padding-left: 1rem;
   }
-
   .bloque-destacado li {
     margin-bottom: 0.5rem;
-    text-indent: 0;
-    padding-left: 0.5rem;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
-
-/* Estilos para texto legal (política privacidad) */
-.texto-legal {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem 2rem;
-  background-color: #f3ecf9; /* color suave */
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #4a3d4f;
-}
-
-.texto-legal h2, .texto-legal h3 {
-  color: #4a3d4f;
-  margin-bottom: 1rem;
-}
-
-.texto-legal ul {
-  padding-left: 20px;
-  margin-bottom: 1rem;
-  list-style-type: disc;
-}
-
-.texto-legal li {
-  margin-bottom: 0.6rem;
-}
-
-/* Responsivo para texto legal POLITICA PRIVACIDAD */
-@media (max-width: 768px) {
-  .texto-legal {
-    max-width: 95%;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-  .banner {
-    flex-direction: row !important; /* Mantener en fila */
-    align-items: center !important;
-    padding: 1rem !important;
-    gap: 1rem !important;
-  }
-
-  .banner h1 {
-    font-size: 1.8rem !important;
-    margin: 0 !important;
-    white-space: normal !important;
-    flex-shrink: 1 !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .banner-icon {
-    height: 30px !important;   /* Tamaño pequeño */
-    width: auto !important;
-    margin-left: auto !important;  /* Empuja a la derecha */
-    flex-shrink: 0 !important;     /* No se reduce */
-    display: block !important;
-  }
-
-  
-  }
-}
-
-
