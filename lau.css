@@ -113,8 +113,9 @@ h1, h2, h3 {
   display: flex;
   justify-content: flex-start;  /* La empuja un poco a la derecha */
   align-items: flex-start;
-  margin-top: 20px;            /* Sube la imagen */
+  margin-top: 85px;            /* Sube la imagen */
   margin-left: 10px;            /* Desplaza a la derecha */
+
 }
 
 .foto-sobre-mi img {
