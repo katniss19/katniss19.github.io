@@ -361,14 +361,16 @@ h1, h2, h3 {
     padding: 0.8rem 1rem;
     text-align: center;
   }
+
 .banner-lau {
-  width: auto;
   height: 60px;
   max-width: 100%;
   object-fit: contain;
   display: block;
-  margin: 0 auto 0.5rem auto; /* margen superior 0, centrado horizontal, margen inferior 0.5rem */
+  margin-left: 50px; /* ⇠ Ajusta esto como prefieras */
+  margin-bottom: 0.5rem;
 }
+
 
   .nav {
     flex-wrap: wrap;
