@@ -7,30 +7,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Sección: Sobre mí -->
-  <url>
-    <loc>https://lauraguadopsicologia.com/#sobre-mi</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Sección: Enfoque -->
-  <url>
-    <loc>https://lauraguadopsicologia.com/#enfoque</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Sección: Servicios -->
-  <url>
-    <loc>https://lauraguadopsicologia.com/#servicios</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Sección: Contacto -->
-  <url>
-    <loc>https://lauraguadopsicologia.com/#contacto</loc>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Página de política de privacidad -->
   <url>
     <loc>https://lauraguadopsicologia.com/politicapriv.html</loc>
