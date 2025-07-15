@@ -358,7 +358,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem;
     text-align: center;
   }
 
@@ -424,7 +424,7 @@ h1, h2, h3 {
   .contacto-flex {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+
   }
 
   .foto-sobre-mi {
