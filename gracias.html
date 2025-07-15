@@ -1,27 +1,72 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex">
-  <meta name="description" content="Consulta la política de privacidad de Laura Aguado Psicología, en cumplimiento con el RGPD.">
-  <link rel="canonical" href="https://lauraguadopsicologia.com/politicapriv.html">
-  <title>Formulario recibido</title>
+  <title>Gracias por tu mensaje</title>
+  <link rel="stylesheet" href="lau.css" />
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    body {
+      font-family: 'Lora', serif;
+      background-color: #f4f0f8;
+      color: #4a3d4f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+    .gracias-box {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      max-width: 600px;
+    }
+    .gracias-box h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #6e4e7c;
+    }
+    .gracias-box p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .gracias-box a {
+      display: inline-block;
+      background-color: #a07cb8;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .gracias-box a:hover {
+      background-color: #8f6ca4;
+    }
+    .icono {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
   </style>
   <script>
-    // Redirige después de 3 segundos a la página principal
+    // Redirige a la home tras 3 segundos
     setTimeout(() => {
       window.location.href = 'https://lauraguadopsicologia.com/';
     }, 3000);
   </script>
 </head>
 <body>
-  <h3>¡Gracias por tu mensaje!
-He recibido tu solicitud y me pondré en contacto contigo lo antes posible.</h3>
-  <p>Redirigiendo...</p>
-  <p>Si no, <a href='https://lauraguadopsicologia.com/'>haz clic aquí</a>.</p>
+  <div class="gracias-box">
+    <div class="icono">💌</div>
+    <h3>¡Gracias por tu mensaje!</h3>
+    <p>He recibido tu solicitud y me pondré en contacto contigo lo antes posible.</p>
+    <p>Serás redirigido/a en unos segundos...</p>
+    <a href="https://lauraguadopsicologia.com/">Volver al inicio ahora</a>
+  </div>
 </body>
 </html>
