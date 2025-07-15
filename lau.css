@@ -428,6 +428,10 @@ h1, h2, h3 {
 
   }
 
+#enfoque .enfoque-container {
+  margin-bottom: 1.5rem;
+}
+
   .foto-sobre-mi {
     display: flex;
     justify-content: center;
