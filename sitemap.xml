@@ -1,19 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://lauraaguadopsicologia.com/</loc>
+    <loc>https://katniss19.github.io/PAGINA-PSICO/</loc>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://lauraaguadopsicologia.com/blog.html</loc>
+    <loc>https://katniss19.github.io/PAGINA-PSICO/blog.html</loc>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://lauraaguadopsicologia.com/politicapriv.html</loc>
+    <loc>https://katniss19.github.io/PAGINA-PSICO/politicapriv.html</loc>
     <priority>0.6</priority>
   </url>
-
 </urlset>
