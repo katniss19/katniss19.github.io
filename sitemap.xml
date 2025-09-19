@@ -4,13 +4,25 @@
   <!-- Página principal -->
   <url>
     <loc>https://lauraguadopsicologia.com/</loc>
+    <lastmod>2025-09-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Página de política de privacidad -->
   <url>
     <loc>https://lauraguadopsicologia.com/politicaprivacidad.html</loc>
-    <priority>0.5</priority>
+    <lastmod>2025-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Página de gracias (tras formulario) -->
+  <url>
+    <loc>https://lauraguadopsicologia.com/gracias.html</loc>
+    <lastmod>2025-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 
 </urlset>
